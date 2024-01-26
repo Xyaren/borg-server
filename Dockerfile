@@ -19,4 +19,4 @@ COPY service.sh /usr/local/bin/service.sh
 EXPOSE 22
 VOLUME /etc/ssh
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
